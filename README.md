@@ -1,4 +1,4 @@
-# typing-effect
+# HTML-CSS-typing-effect
 
 ### Purpose: 
 
