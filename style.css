@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: rgb(225, 174, 147);
+}
+
+h1 {
+  font-size: 6rem;
+  color: #faf6bc;
+}
+
+.typewriter {
+  position: relative;
+}
+
+.typewriter::after {
+  content: '|';
+  position: absolute;
+  right: 0;
+  color: #fff;
+  background-color: rgb(225, 174, 147);
+  width: 100%;
+  animation: typing 3.5s steps(20) alternate infinite, line 1s infinite;
+}
+/* alternate: go forward and back out 
+   infinite: timing function is infinite
+*/
+
+@keyframes typing {
+  to { 
+    width: 0%;
+  }
+}
+
+@keyframes line {
+  50% {
+    color: transparent;
+  }
+}
+/* make cursor blink: at 50% to make it transparent */
+/* 
+100% visible 
+50% transparent 
+*/
